@@ -59,4 +59,4 @@ Para correr el cliente, correr el comando python \<_ruta a http_client.py_\>. Es
 * En las tres instancias EC2 de AWS en las que están el HTTPReader, HTTPCapitalizer y HTTPReverser, se usó PM2 para la gestión de procesos, para correrlos como daemon en segundo plano y mantenerlos activos.
 * Todas las peticiones HTTP que se hicieron entre todos los servicios fueron peticiones POST.
 * La librería de Python que se usó para hacer peticiones fue _requests_
-* La librería de Python que se usó para correr el servidor fue http.server, y los módulos usados fueron ThreadingHTTPServer para correr el servidor y BaseHTTPRequestHandler que se usó para crear otra clase que heredara de esta para gestionar las peticiones que llegan de la manera apropiada según el servicio.
+* La librería de Python que se usó para correr el servidor fue _http.server_, y los módulos usados fueron _ThreadingHTTPServer_ para correr el servidor y _BaseHTTPRequestHandler_, que se usó para crear otra clase que heredara de esta para gestionar las peticiones que llegan de la manera apropiada según el servicio.
